@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Android-speedyviewselector by devsoulwolf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Android-speedyviewselector</h1>
+      <h2 class="project-tagline">This is a change Background Or TextColor Selector support library, with which you can directly specify the Background to be displayed in different states or TextColor Layout xml, such as clicking the button effect, the conventional practice is to create Selector xml file in drawable directory but when the project becomes larger when the file back to the directory Selector cause more and more difficult to maintain and achieve the Library can easily solve these problems, and can also achieve a lot Shape effects can be achieved, if you are using process have any questions or suggestions, please send an email to my email below, thank you!</h2>
+      <a href="https://github.com/devsoulwolf/Android-SpeedyViewSelector" class="btn">View on GitHub</a>
+      <a href="https://github.com/devsoulwolf/Android-SpeedyViewSelector/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/devsoulwolf/Android-SpeedyViewSelector/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="android-speedyviewselector" class="anchor" href="#android-speedyviewselector" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android-SpeedyViewSelector</h1>
+
+<p>This is a change Background Or TextColor Selector support library, with which you can directly specify the Background to be displayed in different states or TextColor Layout xml, such as clicking the button effect, the conventional practice is to create Selector xml file in drawable directory but when the project becomes larger when the file back to the directory Selector cause more and more difficult to maintain and achieve the Library can easily solve these problems, and can also achieve a lot Shape effects can be achieved, if you are using process have any questions or suggestions, please send an email to my email below, thank you!</p>
+
+<p>For more information please see <a href="http://devsoulwolf.github.io/Android-SpeedyViewSelector">the website</a></p>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<p><img src="https://img.alicdn.com/imgextra/i1/1025192026/TB2dXh6epXXXXasXpXXXXXXXXXX_!!1025192026.jpg_620x10000.jpg" alt="Sample1"></p>
+
+<h2>
+<a id="android-speedyviewselector-with-xml-code" class="anchor" href="#android-speedyviewselector-with-xml-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android-SpeedyViewSelector with xml code</h2>
+
+<div class="highlight highlight-xml"><pre>       &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorTextView
+            <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">textSize</span>=<span class="pl-s"><span class="pl-pds">"</span>16sp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">background</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">textColor</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedTextColor</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spJustBorder</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spBorderWidth</span>=<span class="pl-s"><span class="pl-pds">"</span>1dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>SelectorTextView<span class="pl-pds">"</span></span>/&gt;
+
+        &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorTextView
+            <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">textSize</span>=<span class="pl-s"><span class="pl-pds">"</span>16sp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">background</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">textColor</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedTextColor</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>0dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spJustBorder</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spBorderWidth</span>=<span class="pl-s"><span class="pl-pds">"</span>1dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>SelectorTextView<span class="pl-pds">"</span></span>/&gt;
+
+
+        &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorTextView
+            <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">textSize</span>=<span class="pl-s"><span class="pl-pds">"</span>16sp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">background</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">textColor</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedTextColor</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>360dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spJustBorder</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spBorderWidth</span>=<span class="pl-s"><span class="pl-pds">"</span>1dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>SelectorTextView<span class="pl-pds">"</span></span>/&gt;
+
+        &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorFrameLayout
+            <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>20dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStateDefaultBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>/&gt;
+
+        &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorFrameLayout
+            <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>20dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStateDefaultBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>0dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>/&gt;
+
+        &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorFrameLayout
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>20dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStateDefaultBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>360dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>/&gt;
+
+        &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStateDefaultBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spJustBorder</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spBorderWidth</span>=<span class="pl-s"><span class="pl-pds">"</span>1dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>&gt;
+
+            &lt;<span class="pl-ent">TextView</span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>SelectorRelativeLayout<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center<span class="pl-pds">"</span></span>/&gt;
+
+        &lt;/<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout&gt;
+
+        &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStateDefaultBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>0dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spJustBorder</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spBorderWidth</span>=<span class="pl-s"><span class="pl-pds">"</span>1dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>&gt;
+
+            &lt;<span class="pl-ent">TextView</span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>SelectorRelativeLayout<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center<span class="pl-pds">"</span></span>/&gt;
+
+        &lt;/<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout&gt;
+
+        &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStateDefaultBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>360dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spJustBorder</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spBorderWidth</span>=<span class="pl-s"><span class="pl-pds">"</span>1dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>&gt;
+
+            &lt;<span class="pl-ent">TextView</span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>SelectorRelativeLayout<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center<span class="pl-pds">"</span></span>/&gt;
+
+        &lt;/<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout&gt;
+
+        &lt;<span class="pl-ent">LinearLayout</span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginTop</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center_horizontal<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">orientation</span>=<span class="pl-s"><span class="pl-pds">"</span>horizontal<span class="pl-pds">"</span></span>&gt;
+
+            &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorLinearLayout
+                <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>150dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>150dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStateDefaultBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>360dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spJustBorder</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spBorderWidth</span>=<span class="pl-s"><span class="pl-pds">"</span>1dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">orientation</span>=<span class="pl-s"><span class="pl-pds">"</span>horizontal<span class="pl-pds">"</span></span>&gt;
+
+                &lt;<span class="pl-ent">TextView</span>
+                    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+                    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+                    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>SelectorLinearLayout<span class="pl-pds">"</span></span>/&gt;
+
+            &lt;/<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorLinearLayout&gt;
+
+            &lt;<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorLinearLayout
+                <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">soulwolf</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>150dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>150dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStateDefaultBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_primary<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spStatePressedBackground</span>=<span class="pl-s"><span class="pl-pds">"</span>@color/sample_accent<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spRadius</span>=<span class="pl-s"><span class="pl-pds">"</span>360dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">padding</span>=<span class="pl-s"><span class="pl-pds">"</span>8dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">clickable</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_marginLeft</span>=<span class="pl-s"><span class="pl-pds">"</span>20dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">gravity</span>=<span class="pl-s"><span class="pl-pds">"</span>center<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spJustBorder</span>=<span class="pl-s"><span class="pl-pds">"</span>false<span class="pl-pds">"</span></span>
+                <span class="pl-e">soulwolf</span><span class="pl-e">:</span><span class="pl-e">spBorderWidth</span>=<span class="pl-s"><span class="pl-pds">"</span>1dp<span class="pl-pds">"</span></span>
+                <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">orientation</span>=<span class="pl-s"><span class="pl-pds">"</span>horizontal<span class="pl-pds">"</span></span>&gt;
+
+                &lt;<span class="pl-ent">TextView</span>
+                    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+                    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+                    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>SelectorLinearLayout<span class="pl-pds">"</span></span>/&gt;
+
+            &lt;/<span class="pl-ent">net</span>.soulwolf.widget.speedyselector.widget.SelectorLinearLayout&gt;
+
+        &lt;/<span class="pl-ent">LinearLayout</span>&gt;
+</pre></div>
+
+<h2>
+<a id="android-speedyviewselector-with-java-code" class="anchor" href="#android-speedyviewselector-with-java-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android-SpeedyViewSelector with java code</h2>
+
+<div class="highlight highlight-java"><pre>    <span class="pl-c">// BackgroundSelector</span>
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addStateBackground(<span class="pl-smi">StateType</span> state,<span class="pl-smi">Drawable</span> drawable);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addStateBackgroundResource(<span class="pl-smi">StateType</span> state,@<span class="pl-smi">DrawableRes</span> <span class="pl-k">int</span> draRes);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addStateBackground(<span class="pl-smi">StateType</span> state,<span class="pl-k">float</span> radius,@<span class="pl-smi">ColorInt</span> <span class="pl-k">int</span>  color);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addStateBackground(<span class="pl-smi">StateType</span> state,<span class="pl-k">float</span> radius,<span class="pl-k">boolean</span> justBorder,@<span class="pl-smi">ColorInt</span> <span class="pl-k">int</span> color);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addStateBackground(<span class="pl-smi">StateType</span> state,<span class="pl-k">float</span> radius,<span class="pl-k">boolean</span> justBorder,<span class="pl-k">float</span> borderWidth,@<span class="pl-smi">ColorInt</span> <span class="pl-k">int</span> color);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addStateBackgroundResource(<span class="pl-smi">StateType</span> state,<span class="pl-k">float</span> radius,@<span class="pl-smi">ColorRes</span> <span class="pl-k">int</span> colorRes);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addStateBackgroundResource(<span class="pl-smi">StateType</span> state,<span class="pl-k">float</span> radius,<span class="pl-k">boolean</span> justBorder,@<span class="pl-smi">ColorRes</span> <span class="pl-k">int</span> colorRes);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addStateBackgroundResource(<span class="pl-smi">StateType</span> state,<span class="pl-k">float</span> radius,<span class="pl-k">boolean</span> justBorder,<span class="pl-k">float</span> borderWidth,@<span class="pl-smi">ColorRes</span> <span class="pl-k">int</span> colorRes);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> requestSelector();
+
+    <span class="pl-c">// TextColorSelector</span>
+    <span class="pl-k">public</span> <span class="pl-k">void</span> setTextColorResource(@<span class="pl-smi">ColorRes</span> <span class="pl-k">int</span> resId);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addTextStateColor(<span class="pl-smi">StateType</span> state,@<span class="pl-smi">ColorInt</span> <span class="pl-k">int</span> color);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> addTextStateColorResource(<span class="pl-smi">StateType</span> state, @<span class="pl-smi">ColorRes</span> <span class="pl-k">int</span> colorRes);
+
+    <span class="pl-k">public</span> <span class="pl-k">void</span> requestSelector();</pre></div>
+
+<h2>
+<a id="attr-params--info" class="anchor" href="#attr-params--info" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attr params  info</h2>
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>attrName</b></td>
+            <td><b>Explanation</b></td>
+        </tr>
+        <tr>
+            <td>spRadius</td>
+            <td>This parameter is used to set the radius of each corner Background! </td>
+        </tr>
+        <tr>
+            <td>spJustBorder</td>
+            <td>This parameter indicates whether to draw only border</td>
+        </tr>
+        <tr>
+            <td>spBorderWidth</td>
+            <td>This parameter indicates the width of the border</td>
+        </tr>
+        <tr>
+            <td>spStateDefaultBackgroundspStateDefaultTextColor</td>
+            <td>Background Or TextColor this parameter default to be displayed</td>
+        </tr>
+        <tr>
+            <td>spStateFocusedBackgroundspStateFocusedTextColor</td>
+            <td>Background Or TextColor this parameter StateFocused to be displayed</td>
+        </tr>
+        <tr>
+            <td>spStateWindowFocusedBackgroundspStateWindowFocusedTextColor</td>
+            <td>Background Or TextColor this parameter StateWindowFocused to be displayed</td>
+        </tr>   
+        <tr>
+            <td>spStateEnabledBackgroundspStateEnabledTextColor</td>
+            <td>Background Or TextColor this parameter StateEnabled to be displayed</td>
+        </tr>
+        <tr>
+            <td>spStateCheckedBackgroundspStateCheckedTextColor</td>
+            <td>Background Or TextColor this parameter StateChecked to be displayed</td>
+        </tr>
+        <tr>
+            <td>spStateSelectedBackgroundspStateSelectedTextColor</td>
+            <td>Background Or TextColor this parameter StateSelected to be displayed</td>
+        </tr>
+        <tr>
+            <td>spStateActivatedBackgroundspStateActivatedTextColor</td>
+            <td>Background Or TextColor this parameter StateActivated to be displayed</td>
+        </tr>
+        <tr>
+            <td>spStatePressedBackgroundspStatePressedTextColor</td>
+            <td>Background Or TextColor this parameter StatePressed to be displayed</td>
+        </tr>
+        <tr>
+            <td>spStateActiveBackgroundspStateActiveTextColor</td>
+            <td>Background Or TextColor this parameter StateActive to be displayed</td>
+        </tr>   
+    </tbody>
+</table>
+
+<h2>
+<a id="implementing-view" class="anchor" href="#implementing-view" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementing View!</h2>
+
+<p></p><ul>
+    <li>SelectorAbsoluteLayout</li>
+    <li>SelectorButton</li>
+    <li>SelectorCheckBox</li>
+    <li>SelectorEditText</li>
+    <li>SelectorFrameLayout</li>
+    <li>SelectorGridLayout</li>
+    <li>SelectorImageButton</li>
+    <li>SelectorLinearLayout</li>
+    <li>SelectorRadioButton</li>
+    <li>SelectorRadioGroup</li>
+    <li>SelectorRelativeLayout</li>
+    <li>SelectorTableLayout</li>
+    <li>SelectorTextView</li>
+    <li>SelectorView</li>
+ </ul>
+
+<h2>
+<a id="custom" class="anchor" href="#custom" aria-hidden="true"><span class="octicon octicon-link"></span></a>Custom</h2>
+
+<div class="highlight highlight-java"><pre>    <span class="pl-c">// Background Selector</span>
+    <span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">SelectorFrameLayout</span> <span class="pl-k">extends</span> <span class="pl-e">FrameLayout</span> <span class="pl-k">implements</span> <span class="pl-e">BackgroundSelector</span>{
+
+        <span class="pl-smi">SpeedySelectorDelegate</span> mSpeedySelectorDelegate;
+
+        <span class="pl-k">public</span> <span class="pl-en">SelectorFrameLayout</span>(<span class="pl-smi">Context</span> <span class="pl-v">context</span>) {
+            <span class="pl-v">super</span>(context);
+            mSpeedySelectorDelegate <span class="pl-k">=</span> <span class="pl-smi">SpeedySelectorDelegate</span><span class="pl-k">.</span>obtain(<span class="pl-v">this</span>);
+        }
+
+        <span class="pl-k">public</span> <span class="pl-en">SelectorFrameLayout</span>(<span class="pl-smi">Context</span> <span class="pl-v">context</span>, <span class="pl-smi">AttributeSet</span> <span class="pl-v">attrs</span>) {
+            <span class="pl-v">super</span>(context, attrs);
+            mSpeedySelectorDelegate <span class="pl-k">=</span> <span class="pl-smi">SpeedySelectorDelegate</span><span class="pl-k">.</span>obtain(<span class="pl-v">this</span>,attrs);
+        }
+
+        <span class="pl-k">public</span> <span class="pl-en">SelectorFrameLayout</span>(<span class="pl-smi">Context</span> <span class="pl-v">context</span>, <span class="pl-smi">AttributeSet</span> <span class="pl-v">attrs</span>, <span class="pl-k">int</span> <span class="pl-v">defStyleAttr</span>) {
+            <span class="pl-v">super</span>(context, attrs, defStyleAttr);
+            mSpeedySelectorDelegate <span class="pl-k">=</span> <span class="pl-smi">SpeedySelectorDelegate</span><span class="pl-k">.</span>obtain(<span class="pl-v">this</span>,attrs,defStyleAttr);
+        }
+
+        <span class="pl-k">@TargetApi</span>(<span class="pl-smi">Build</span><span class="pl-c1"><span class="pl-k">.</span>VERSION_CODES<span class="pl-k">.</span>LOLLIPOP</span>)
+        <span class="pl-k">public</span> <span class="pl-en">SelectorFrameLayout</span>(<span class="pl-smi">Context</span> <span class="pl-v">context</span>, <span class="pl-smi">AttributeSet</span> <span class="pl-v">attrs</span>, <span class="pl-k">int</span> <span class="pl-v">defStyleAttr</span>, <span class="pl-k">int</span> <span class="pl-v">defStyleRes</span>) {
+            <span class="pl-v">super</span>(context, attrs, defStyleAttr, defStyleRes);
+            mSpeedySelectorDelegate <span class="pl-k">=</span> <span class="pl-smi">SpeedySelectorDelegate</span><span class="pl-k">.</span>obtain(<span class="pl-v">this</span>,attrs,defStyleAttr,defStyleRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackground</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-smi">Drawable</span> <span class="pl-v">drawable</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackground(state,drawable);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackgroundResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">@DrawableRes</span> <span class="pl-k">int</span> <span class="pl-v">draRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackgroundResource(state, draRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackground</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">@ColorInt</span> <span class="pl-k">int</span> <span class="pl-v">color</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackground(state,radius,color);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackground</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">boolean</span> <span class="pl-v">justBorder</span>, <span class="pl-k">@ColorInt</span> <span class="pl-k">int</span> <span class="pl-v">color</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackground(state,radius,justBorder,color);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackground</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">boolean</span> <span class="pl-v">justBorder</span>, <span class="pl-k">float</span> <span class="pl-v">borderWidth</span>, <span class="pl-k">@ColorInt</span> <span class="pl-k">int</span> <span class="pl-v">color</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackground(state,radius,justBorder,borderWidth,color);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackgroundResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">@ColorRes</span> <span class="pl-k">int</span> <span class="pl-v">colorRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackgroundResource(state, radius,colorRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackgroundResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">boolean</span> <span class="pl-v">justBorder</span>, <span class="pl-k">@ColorRes</span> <span class="pl-k">int</span> <span class="pl-v">colorRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackgroundResource(state, radius,justBorder,colorRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackgroundResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">boolean</span> <span class="pl-v">justBorder</span>, <span class="pl-k">float</span> <span class="pl-v">borderWidth</span>, <span class="pl-k">@ColorRes</span> <span class="pl-k">int</span> <span class="pl-v">colorRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackgroundResource(state, radius,justBorder,borderWidth,colorRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">requestSelector</span>() {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>requestSelector();
+        }
+    }
+
+    <span class="pl-c">// General Selector</span>
+    <span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">SelectorTextView</span> <span class="pl-k">extends</span> <span class="pl-e">TextView</span> <span class="pl-k">implements</span> <span class="pl-e">GeneralSelector</span>{
+
+        <span class="pl-smi">SpeedySelectorDelegate</span> mSpeedySelectorDelegate;
+
+        <span class="pl-k">public</span> <span class="pl-en">SelectorTextView</span>(<span class="pl-smi">Context</span> <span class="pl-v">context</span>) {
+            <span class="pl-v">super</span>(context);
+            mSpeedySelectorDelegate <span class="pl-k">=</span> <span class="pl-smi">SpeedySelectorDelegate</span><span class="pl-k">.</span>obtainGeneral(<span class="pl-v">this</span>);
+        }
+
+        <span class="pl-k">public</span> <span class="pl-en">SelectorTextView</span>(<span class="pl-smi">Context</span> <span class="pl-v">context</span>, <span class="pl-smi">AttributeSet</span> <span class="pl-v">attrs</span>) {
+            <span class="pl-v">super</span>(context, attrs);
+            mSpeedySelectorDelegate <span class="pl-k">=</span> <span class="pl-smi">SpeedySelectorDelegate</span><span class="pl-k">.</span>obtainGeneral(<span class="pl-v">this</span>, attrs);
+        }
+
+        <span class="pl-k">public</span> <span class="pl-en">SelectorTextView</span>(<span class="pl-smi">Context</span> <span class="pl-v">context</span>, <span class="pl-smi">AttributeSet</span> <span class="pl-v">attrs</span>, <span class="pl-k">int</span> <span class="pl-v">defStyleAttr</span>) {
+            <span class="pl-v">super</span>(context, attrs, defStyleAttr);
+            mSpeedySelectorDelegate <span class="pl-k">=</span> <span class="pl-smi">SpeedySelectorDelegate</span><span class="pl-k">.</span>obtainGeneral(<span class="pl-v">this</span>, attrs, defStyleAttr);
+        }
+
+        <span class="pl-k">@TargetApi</span>(<span class="pl-smi">Build</span><span class="pl-c1"><span class="pl-k">.</span>VERSION_CODES<span class="pl-k">.</span>LOLLIPOP</span>)
+        <span class="pl-k">public</span> <span class="pl-en">SelectorTextView</span>(<span class="pl-smi">Context</span> <span class="pl-v">context</span>, <span class="pl-smi">AttributeSet</span> <span class="pl-v">attrs</span>, <span class="pl-k">int</span> <span class="pl-v">defStyleAttr</span>, <span class="pl-k">int</span> <span class="pl-v">defStyleRes</span>) {
+            <span class="pl-v">super</span>(context, attrs, defStyleAttr, defStyleRes);
+            mSpeedySelectorDelegate <span class="pl-k">=</span> <span class="pl-smi">SpeedySelectorDelegate</span><span class="pl-k">.</span>obtainGeneral(<span class="pl-v">this</span>, attrs, defStyleAttr, defStyleRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackground</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-smi">Drawable</span> <span class="pl-v">drawable</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackground(state,drawable);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackgroundResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">@DrawableRes</span> <span class="pl-k">int</span> <span class="pl-v">draRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackgroundResource(state, draRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackground</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">@ColorInt</span> <span class="pl-k">int</span> <span class="pl-v">color</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackground(state,radius,color);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackground</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">boolean</span> <span class="pl-v">justBorder</span>, <span class="pl-k">@ColorInt</span> <span class="pl-k">int</span> <span class="pl-v">color</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackground(state,radius,justBorder,color);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackground</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">boolean</span> <span class="pl-v">justBorder</span>, <span class="pl-k">float</span> <span class="pl-v">borderWidth</span>, <span class="pl-k">@ColorInt</span> <span class="pl-k">int</span> <span class="pl-v">color</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackground(state,radius,justBorder,borderWidth,color);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackgroundResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">@ColorRes</span> <span class="pl-k">int</span> <span class="pl-v">colorRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackgroundResource(state, radius,colorRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackgroundResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">boolean</span> <span class="pl-v">justBorder</span>, <span class="pl-k">@ColorRes</span> <span class="pl-k">int</span> <span class="pl-v">colorRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackgroundResource(state, radius,justBorder,colorRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addStateBackgroundResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">float</span> <span class="pl-v">radius</span>, <span class="pl-k">boolean</span> <span class="pl-v">justBorder</span>, <span class="pl-k">float</span> <span class="pl-v">borderWidth</span>, <span class="pl-k">@ColorRes</span> <span class="pl-k">int</span> <span class="pl-v">colorRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addStateBackgroundResource(state, radius,justBorder,borderWidth,colorRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">setTextColorResource</span>(<span class="pl-k">@ColorRes</span> <span class="pl-k">int</span> <span class="pl-v">resId</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>setTextColorRessource(resId);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addTextStateColor</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">@ColorInt</span> <span class="pl-k">int</span> <span class="pl-v">color</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addTextStateColor(state,color);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">addTextStateColorResource</span>(<span class="pl-smi">StateType</span> <span class="pl-v">state</span>, <span class="pl-k">@ColorRes</span> <span class="pl-k">int</span> <span class="pl-v">colorRes</span>) {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>addTextStateColorRessource(state, colorRes);
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">requestSelector</span>() {
+            mSpeedySelectorDelegate<span class="pl-k">.</span>requestSelector();
+        }
+    }</pre></div>
+
+<h2>
+<a id="maven" class="anchor" href="#maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maven</h2>
+
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;net.soulwolf.widget&lt;/groupId&gt;
+    &lt;url&gt;https://dl.bintray.com/soulwolf/maven&lt;/url&gt;
+    &lt;artifactId&gt;speedySelector&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<h2>
+<a id="gradle" class="anchor" href="#gradle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gradle</h2>
+
+<pre><code>allprojects {
+   repositories {
+      jcenter()
+   }
+}
+
+compile 'net.soulwolf.widget:speedySelector:1.0.0'
+</code></pre>
+
+<h2>
+<a id="developed-by" class="anchor" href="#developed-by" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developed by</h2>
+
+<p>Ching Soulwolf - <a href="mailto:Ching.Soulwolf@gmail.com">Ching.Soulwolf@gmail.com</a></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code>Copyright 2015 Soulwolf Ching
+Copyright 2015 The Android Open Source Project for Android-SpeedyViewSelector
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/devsoulwolf/Android-SpeedyViewSelector">Android-speedyviewselector</a> is maintained by <a href="https://github.com/devsoulwolf">devsoulwolf</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("Android-speedyviewselector");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
