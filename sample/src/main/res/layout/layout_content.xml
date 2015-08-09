@@ -12,6 +12,7 @@
         android:padding="15dp">
 
         <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+            xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -28,6 +29,7 @@
             android:text="SelectorTextView"/>
 
         <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+            xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -46,6 +48,7 @@
 
 
         <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+            xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -63,6 +66,7 @@
             android:text="SelectorTextView"/>
 
         <net.soulwolf.widget.speedyselector.widget.SelectorFrameLayout
+            xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
             android:padding="20dp"
@@ -73,6 +77,7 @@
             android:layout_height="wrap_content"/>
 
         <net.soulwolf.widget.speedyselector.widget.SelectorFrameLayout
+            xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
             android:padding="20dp"
@@ -93,6 +98,7 @@
             android:layout_height="wrap_content"/>
 
         <net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
             android:padding="8dp"
@@ -113,6 +119,7 @@
         </net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout>
 
         <net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
             android:padding="8dp"
@@ -133,6 +140,7 @@
         </net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout>
 
         <net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
             android:padding="8dp"
@@ -160,6 +168,7 @@
             android:orientation="horizontal">
 
             <net.soulwolf.widget.speedyselector.widget.SelectorLinearLayout
+                xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 soulwolf:spStateDefaultBackground="@color/sample_primary"
@@ -180,6 +189,7 @@
             </net.soulwolf.widget.speedyselector.widget.SelectorLinearLayout>
 
             <net.soulwolf.widget.speedyselector.widget.SelectorLinearLayout
+                xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 soulwolf:spStateDefaultBackground="@color/sample_primary"
