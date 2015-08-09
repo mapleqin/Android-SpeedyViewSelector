@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SpeedySelectorBackground" >
+        <attr name="spStateDefaultBackground" format="reference|color"/>
+        <attr name="spStateFocusedBackground" format="reference|color"/>
+        <attr name="spStateWindowFocusedBackground" format="reference|color"/>
+        <attr name="spStateEnabledBackground" format="reference|color"/>
+        <attr name="spStateCheckedBackground" format="reference|color"/>
+        <attr name="spStateSelectedBackground" format="reference|color"/>
+        <attr name="spStateActivatedBackground" format="reference|color"/>
+        <attr name="spStatePressedBackground" format="reference|color"/>
+        <attr name="spStateActiveBackground" format="reference|color"/>
+        <attr name="spRadius" format="dimension"/>
+        <attr name="spJustBorder" format="boolean"/>
+        <attr name="spBorderWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SpeedySelectorTextColor" >
+        <attr name="spStateDefaultTextColor" format="color"/>
+        <attr name="spStateFocusedTextColor" format="color"/>
+        <attr name="spStateWindowFocusedTextColor" format="color"/>
+        <attr name="spStateEnabledTextColor" format="color"/>
+        <attr name="spStateCheckedTextColor" format="color"/>
+        <attr name="spStateSelectedTextColor" format="color"/>
+        <attr name="spStateActivatedTextColor" format="color"/>
+        <attr name="spStatePressedTextColor" format="color"/>
+        <attr name="spStateActiveTextColor" format="color"/>
+    </declare-styleable>
+
+</resources>

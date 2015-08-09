@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:soulwolf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:background="@color/sample_primary"
+            android:textColor="@color/sample_primary"
+            soulwolf:spStatePressedTextColor="@color/sample_accent"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="8dp"
+            soulwolf:spJustBorder="true"
+            soulwolf:spBorderWidth="1dp"
+            android:text="SelectorTextView"/>
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:background="@color/sample_primary"
+            android:textColor="@color/sample_primary"
+            soulwolf:spStatePressedTextColor="@color/sample_accent"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="0dp"
+            soulwolf:spJustBorder="true"
+            soulwolf:spBorderWidth="1dp"
+            android:text="SelectorTextView"/>
+
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:background="@color/sample_primary"
+            android:textColor="@color/sample_primary"
+            soulwolf:spStatePressedTextColor="@color/sample_accent"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="360dp"
+            soulwolf:spJustBorder="true"
+            soulwolf:spBorderWidth="1dp"
+            android:text="SelectorTextView"/>
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorFrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:padding="20dp"
+            soulwolf:spStateDefaultBackground="@color/sample_primary"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="8dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"/>
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorFrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:padding="20dp"
+            soulwolf:spStateDefaultBackground="@color/sample_primary"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="0dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"/>
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorFrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:padding="20dp"
+            soulwolf:spStateDefaultBackground="@color/sample_primary"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="360dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"/>
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            soulwolf:spStateDefaultBackground="@color/sample_primary"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="8dp"
+            soulwolf:spJustBorder="true"
+            soulwolf:spBorderWidth="1dp"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SelectorRelativeLayout"
+                android:gravity="center"/>
+
+        </net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout>
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            soulwolf:spStateDefaultBackground="@color/sample_primary"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="0dp"
+            soulwolf:spJustBorder="true"
+            soulwolf:spBorderWidth="1dp"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SelectorRelativeLayout"
+                android:gravity="center"/>
+
+        </net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout>
+
+        <net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            soulwolf:spStateDefaultBackground="@color/sample_primary"
+            soulwolf:spStatePressedBackground="@color/sample_accent"
+            soulwolf:spRadius="360dp"
+            soulwolf:spJustBorder="true"
+            soulwolf:spBorderWidth="1dp"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SelectorRelativeLayout"
+                android:gravity="center"/>
+
+        </net.soulwolf.widget.speedyselector.widget.SelectorRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <net.soulwolf.widget.speedyselector.widget.SelectorLinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                soulwolf:spStateDefaultBackground="@color/sample_primary"
+                soulwolf:spStatePressedBackground="@color/sample_accent"
+                soulwolf:spRadius="360dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="8dp"
+                soulwolf:spJustBorder="true"
+                soulwolf:spBorderWidth="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SelectorLinearLayout"/>
+
+            </net.soulwolf.widget.speedyselector.widget.SelectorLinearLayout>
+
+            <net.soulwolf.widget.speedyselector.widget.SelectorLinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                soulwolf:spStateDefaultBackground="@color/sample_primary"
+                soulwolf:spStatePressedBackground="@color/sample_accent"
+                soulwolf:spRadius="360dp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                soulwolf:spJustBorder="false"
+                soulwolf:spBorderWidth="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SelectorLinearLayout"/>
+
+            </net.soulwolf.widget.speedyselector.widget.SelectorLinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
