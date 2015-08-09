@@ -5,7 +5,7 @@ This is a change Background Or TextColor Selector support library, with which yo
 For more information please see <a href='http://devsoulwolf.github.io/Android-SpeedyViewSelector'>the website</a>
 
 ## Screenshots
-![Sample1](https://img.alicdn.com/imgextra/i1/1025192026/TB2dXh6epXXXXasXpXXXXXXXXXX_!!1025192026.jpg_620x10000.jpg)
+![Sample1](https://img.alicdn.com/imgextra/i2/1025192026/TB2tGqiepXXXXXkXpXXXXXXXXXX_!!1025192026.gif)
 
 ## Android-SpeedyViewSelector with xml code
 ```xml
