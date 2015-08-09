@@ -264,39 +264,39 @@ For more information please see <a href='http://devsoulwolf.github.io/Android-Sp
 			<td>This parameter indicates the width of the border</td>
 		</tr>
 		<tr>
-			<td>spStateDefaultBackground</br>spStateDefaultTextColor</td>
+			<td>spStateDefaultBackground<br/>spStateDefaultTextColor</td>
 			<td>Background Or TextColor this parameter default to be displayed</td>
 		</tr>
 		<tr>
-			<td>spStateFocusedBackground</br>spStateFocusedTextColor</td>
+			<td>spStateFocusedBackground<br/>spStateFocusedTextColor</td>
 			<td>Background Or TextColor this parameter StateFocused to be displayed</td>
 		</tr>
 		<tr>
-			<td>spStateWindowFocusedBackground</br>spStateWindowFocusedTextColor</td>
+			<td>spStateWindowFocusedBackground<br/>spStateWindowFocusedTextColor</td>
 			<td>Background Or TextColor this parameter StateWindowFocused to be displayed</td>
 		</tr>	
 		<tr>
-			<td>spStateEnabledBackground</br>spStateEnabledTextColor</td>
+			<td>spStateEnabledBackground<br/>spStateEnabledTextColor</td>
 			<td>Background Or TextColor this parameter StateEnabled to be displayed</td>
 		</tr>
 		<tr>
-			<td>spStateCheckedBackground</br>spStateCheckedTextColor</td>
+			<td>spStateCheckedBackground<br/>spStateCheckedTextColor</td>
 			<td>Background Or TextColor this parameter StateChecked to be displayed</td>
 		</tr>
 		<tr>
-			<td>spStateSelectedBackground</br>spStateSelectedTextColor</td>
+			<td>spStateSelectedBackground<br/>spStateSelectedTextColor</td>
 			<td>Background Or TextColor this parameter StateSelected to be displayed</td>
 		</tr>
 		<tr>
-			<td>spStateActivatedBackground</br>spStateActivatedTextColor</td>
+			<td>spStateActivatedBackground<br/>spStateActivatedTextColor</td>
 			<td>Background Or TextColor this parameter StateActivated to be displayed</td>
 		</tr>
 		<tr>
-			<td>spStatePressedBackground</br>spStatePressedTextColor</td>
+			<td>spStatePressedBackground<br/>spStatePressedTextColor</td>
 			<td>Background Or TextColor this parameter StatePressed to be displayed</td>
 		</tr>
 		<tr>
-			<td>spStateActiveBackground</br>spStateActiveTextColor</td>
+			<td>spStateActiveBackground<br/>spStateActiveTextColor</td>
 			<td>Background Or TextColor this parameter StateActive to be displayed</td>
 		</tr>	
 	</tbody>
